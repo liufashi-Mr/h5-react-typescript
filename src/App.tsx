@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "antd-mobile";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
-function App() {
+import { Link, Outlet } from "react-router-dom";
+const App: React.FC<any> = () => {
   return (
     <div>
       <Link to="home">
@@ -13,6 +13,6 @@ function App() {
       <Outlet />
     </div>
   );
-}
+};
 
 export default App;
