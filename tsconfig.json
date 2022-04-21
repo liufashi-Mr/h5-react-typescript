@@ -16,15 +16,15 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@": ["src/*"],
-      "@api": ["src/api/*"],
-      "@icons": ["src/assets/icons/*"],
-      "@images": ["src/assets/icons/images"],
-      "@components": ["src/components/*"],
-      "@pages": ["src/pages/*"],
-      "@utils": ["src/utils/*"]
+      "@/*": ["src/*"],
+      "@api/*": ["src/apis/*"],
+      "@icons/*": ["src/assets/icons/*"],
+      "@images/*": ["src/assets/images/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@utils/*": ["src/utils/*"]
     }
   },
   "include": ["src"]
