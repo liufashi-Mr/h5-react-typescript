@@ -1,11 +1,12 @@
-import React from 'react';
-
+import React from "react";
+import { Button } from "antd-mobile";
 function App() {
   return (
-    <div className="App">
-      app
+    <div>
+      <Button color="primary">app</Button>
     </div>
   );
 }
 
 export default App;
+ 
