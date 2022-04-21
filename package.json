@@ -164,7 +164,8 @@
   "lint-staged": {
     "*.{jsx,ts,tsx}": [
       "node -v",
-      "npm run lint"
+      "npm run lint",
+      "prettier --write "
     ]
   },
   "husky": {
