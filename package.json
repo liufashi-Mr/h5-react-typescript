@@ -160,15 +160,15 @@
     "prettier": "^2.6.2",
     "sass": "^1.50.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{jsx,ts,tsx}": [
       "yarn run lint:ts",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
