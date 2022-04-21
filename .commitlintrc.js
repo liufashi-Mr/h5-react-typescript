@@ -1,6 +1,7 @@
 module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
+    //0->off 1->warn 2->error
     "type-enum": [
       2,
       "always",
@@ -16,8 +17,8 @@ module.exports = {
         "chore", // 其他改动
       ],
     ],
-    "type-empty": [2, "never"], // 提交不符合规范时,也可以提交,但是会有警告
-    "subject-empty": [2, "never"], // 提交不符合规范时,也可以提交,但是会有警告
+    "type-empty": [2, "always"],
+    "subject-empty": [2, "always"],
     "subject-full-stop": [0, "never"],
     "subject-case": [0, "never"],
   },

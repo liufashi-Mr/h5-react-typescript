@@ -20,8 +20,8 @@ module.exports = {
   extends: ["eslint:recommended", "plugin:react/recommended"],
   plugins: ["prettier", "react", "react-hooks"],
   // "off" -> 0 关闭规则
-  // "warn" -> 1 开启警告规则
-  // "error" -> 2 开启错误规则
+  // "warn" -> 1 开启警告规则 可以提交
+  // "error" -> 2 开启错误规则 无法提交
   rules: {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",

@@ -3,7 +3,6 @@ module.exports = {
   tabWidth: 2,
   semi: true,
   singleQuote: false,
-  jsxSingleQuote: false,
-  endOfLine: 'auto',
+  endOfLine: "auto",
   bracketSpacing: true,
 };
