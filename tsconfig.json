@@ -24,8 +24,9 @@
       "@images/*": ["src/assets/images/*"],
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@router/*": ["src/router/*"]
     }
   },
-  "include": ["src"]
+  "exclude": ["node_modules", "dist"]
 }
