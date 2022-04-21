@@ -17,8 +17,8 @@ module.exports = {
         "chore", // 其他改动
       ],
     ],
-    "type-empty": [2, "always"],
-    "subject-empty": [2, "always"],
+    "type-empty": [2, "never"],
+    "subject-empty": [2, "never"],
     "subject-full-stop": [0, "never"],
     "subject-case": [0, "never"],
   },
