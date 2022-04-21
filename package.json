@@ -68,17 +68,9 @@
       "pre-commit": "lint-staged"
     }
   },
-
   "lint-staged": {
-    "./src/*.{js,jsx,ts,tsx}": [
-      "npm run lint:js",
-      "npx prettier --write",
-      "eslint src/*.js --fix-dry-run",
-      "git add"
-    ],
-    "**/*.(scss|sass)": [
-      "stylelint --syntax (scss|sass)",
-      "npm run prettier",
+    "*.{jsx,ts,tsx}": [
+      "yarn run lint:ts",
       "git add"
     ]
   },
@@ -86,7 +78,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "commit": "cz"
+    "commit": "cz",
+    "lint:ts": "eslint --fix -p ./tsconfig.json"
   },
   "eslintConfig": {
     "extends": [
@@ -163,6 +156,8 @@
     ]
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.4",
     "eslint-config-prettier": "^8.5.0",

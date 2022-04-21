@@ -1,7 +1,7 @@
 module.exports = {
   //此项是用来告诉eslint找当前配置文件不能往父级查找
   root: true,
-  parser: "babel-eslint",
+  parser: "@typescript-eslint/parser",
   //此项指定环境的全局变量
   env: {
     browser: true,
@@ -27,6 +27,5 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "no-console": "off",
     "no-debugger": "off",
-    eqeqeq: "off",
   },
 };

@@ -2,3 +2,5 @@
 /public
 /.vscode
 /build
+/scripts
+/config
