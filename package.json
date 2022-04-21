@@ -76,8 +76,8 @@
       "eslint src/*.js --fix-dry-run",
       "git add"
     ],
-    "**/*.less": [
-      "stylelint --syntax less",
+    "**/*.(scss|sass)": [
+      "stylelint --syntax (scss|sass)",
       "npm run prettier",
       "git add"
     ]
