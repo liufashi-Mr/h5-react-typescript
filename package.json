@@ -144,6 +144,8 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "babel-eslint": "^10.1.0",
@@ -162,7 +164,6 @@
   "lint-staged": {
     "*.{jsx,ts,tsx}": [
       "npm run lint",
-      "prettier --write",
       "git add"
     ]
   },
