@@ -68,7 +68,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "commit": "cz",
-    "lint:ts": "eslint --fix -p ./tsconfig.json"
+    "lint": "eslint --fix -p ./tsconfig.json"
   },
   "eslintConfig": {
     "extends": [
@@ -162,7 +162,7 @@
   },
   "lint-staged": {
     "*.{jsx,ts,tsx}": [
-      "npm run lint:ts",
+      "npm run lint",
       "git add"
     ]
   },
