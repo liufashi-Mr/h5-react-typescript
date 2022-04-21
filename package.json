@@ -63,17 +63,6 @@
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{jsx,ts,tsx}": [
-      "yarn run lint:ts",
-      "git add"
-    ]
-  },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
@@ -170,5 +159,16 @@
     "lint-staged": "^12.4.0",
     "prettier": "^2.6.2",
     "sass": "^1.50.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{jsx,ts,tsx}": [
+      "yarn run lint:ts",
+      "git add"
+    ]
   }
 }
