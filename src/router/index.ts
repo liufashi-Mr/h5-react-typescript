@@ -7,7 +7,7 @@ interface RouteItem {
 }
 const routes: Array<RouteItem> = [
   {
-    index: true,
+    path: "",
     redirect: "home",
   },
   {
