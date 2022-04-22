@@ -23,10 +23,15 @@ module.exports = {
   // "warn" -> 1 开启警告规则 可以提交
   // "error" -> 2 开启错误规则 无法提交
   rules: {
+    // 检查 Hooks 的使用规则
     "react-hooks/rules-of-hooks": "error",
+    // 检查依赖项的声明
     "react-hooks/exhaustive-deps": "warn",
+    //console
     "no-console": "warn",
+    //debugger
     "no-debugger": "off",
+    //定义未使用
     "no-unused-vars": "off",
   },
 };

@@ -1,6 +1,7 @@
 import React from "react";
-interface IProps {}
-const Home: React.FC<IProps> = (props) => {
+import { testRequest } from "@/apis";
+const Home: React.FC<{}> = () => {
+  testRequest();
   return <div>home</div>;
 };
 export default Home;
