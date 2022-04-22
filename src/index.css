@@ -9,6 +9,9 @@ li {
 a {
   text-decoration: none;
 }
+/* html {
+  font-size: 26.66667vw !important;
+} */
 /* 根据设计稿修改 */
 :root:root {
   --adm-color-primary: #cd16ff;
@@ -21,7 +24,6 @@ a {
   --adm-border-color: #eeeeee;
   --adm-font-size-main: 13px;
   --adm-color-text: #333333;
-  --adm-font-family: -apple-system, blinkmacsystemfont, "Helvetica Neue",
-    helvetica, segoe ui, arial, roboto, "PingFang SC", "miui",
-    "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  --adm-font-family: -apple-system, blinkmacsystemfont, "Helvetica Neue", helvetica, segoe ui, arial, roboto,
+    "PingFang SC", "miui", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
 }

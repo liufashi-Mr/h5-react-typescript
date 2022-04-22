@@ -37,6 +37,7 @@
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
+    "lib-flexible": "^0.3.2",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
@@ -161,6 +162,7 @@
     "eslint-plugin-react-hooks": "^4.4.0",
     "husky": "4.3.8",
     "lint-staged": "^12.4.0",
+    "postcss-pxtorem": "^6.0.0",
     "prettier": "^2.6.2",
     "sass": "^1.50.1"
   },

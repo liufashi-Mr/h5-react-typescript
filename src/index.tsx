@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "lib-flexible";
 import routes from "./router";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
@@ -10,7 +11,7 @@ root.render(
     <Suspense fallback={<></>}>
       <Routes>
         <Route path="/" element={<App />}>
-          {routes.map((route) => {
+          {routes.map(route => {
             return <Route key={route.name} path={route.path} element={<route.component />} />;
           })}
         </Route>
