@@ -7,6 +7,7 @@ interface ResponseData<T = any> {
   success: true | false;
 }
 
+//eggs:
 interface UserInfo {
   username?: "";
 }
