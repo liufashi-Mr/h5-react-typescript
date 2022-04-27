@@ -16,6 +16,7 @@ module.exports = {
         "revert", // 回滚
         "config", // 构建过程或辅助工具的变动
         "chore", // 其他改动
+        "message", //注释&文案更改
       ],
     ],
     "type-empty": [2, "never"],

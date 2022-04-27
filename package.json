@@ -71,7 +71,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "lint": "eslint --fix"
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -169,7 +170,7 @@
   "lint-staged": {
     "*.{jsx,ts,tsx,js}": [
       "node -v",
-      "npm run lint",
+      "npm run lint:fix",
       "prettier --write "
     ]
   },

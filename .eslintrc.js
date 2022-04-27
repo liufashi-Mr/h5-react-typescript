@@ -17,8 +17,14 @@ module.exports = {
     sourceType: "module",
   },
   // 此项是用来配置标准的js风格，就是说写代码的时候要规范的写
-  extends: ["eslint:recommended", "plugin:react/recommended"],
-  plugins: ["prettier", "react", "react-hooks"],
+  extends: [
+    "eslint:recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+  ],
+  plugins: ["@typescript-eslint", "prettier", "react", "react-hooks"],
   // "off" -> 0 关闭规则
   // "warn" -> 1 开启警告规则 可以提交
   // "error" -> 2 开启错误规则 无法提交
@@ -32,6 +38,6 @@ module.exports = {
     //debugger
     "no-debugger": "off",
     //定义未使用
-    "no-unused-vars": "off",
+    "no-unused-vars": "warn",
   },
 };

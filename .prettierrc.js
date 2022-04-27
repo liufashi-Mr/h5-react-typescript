@@ -1,6 +1,6 @@
 module.exports = {
   //每行宽度
-  printWidth: 120,
+  printWidth: 100,
   //制表符宽度
   tabWidth: 2,
   //使用分号
