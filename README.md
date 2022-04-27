@@ -1,6 +1,6 @@
-# 门诊引导
+# react h5 template
 
-## 项目介绍
+## react h5 template
 
 门诊导引
 

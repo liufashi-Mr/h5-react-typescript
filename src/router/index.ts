@@ -1,10 +1,11 @@
-import React, { lazy, LazyExoticComponent } from "react";
-interface RouteItem {
+import React, { lazy } from "react";
+export interface RouteItem {
   path?: string; //路径
   name: string; //路由对应的名称,用作key,当子路由为index路由时采用父路由的name
   component?: any; //懒加载组件
   index?: true | false; //是否为默认子路由,配置后不需要配置path属性
   redirect?: string; //重定向路由
+  children?: Array<RouteItem>;
 }
 const routes: Array<RouteItem> = [
   {
