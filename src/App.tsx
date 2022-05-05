@@ -4,13 +4,14 @@ import { Link, Outlet } from "react-router-dom";
 const App: React.FC<any> = () => {
   return (
     <div>
-      <Link to="home">
-        <Button color="primary">home</Button>
-      </Link>
-      <Link to="test">
-        <Button color="primary">test</Button>
-      </Link>
       <Outlet />
+
+      <Link to="home">
+        <Button color="primary">首页</Button>
+      </Link>
+      <Link to="my">
+        <Button color="primary">我的</Button>
+      </Link>
     </div>
   );
 };

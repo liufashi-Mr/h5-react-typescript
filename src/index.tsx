@@ -10,14 +10,14 @@ const routerMap: (routes: Array<RouteItem>) => Array<JSX.Element> = routes => {
   return routes.map(route =>
     !route.children?.length ? (
       route.redirect ? (
-        <Route path={route.path} key={route.name} element={<Navigate to={route.redirect} />} />
+        <Route path={route.path} key={route.path} element={<Navigate to={route.redirect} />} />
       ) : route.index ? (
-        <Route index key={route.name} element={<route.component />} />
+        <Route index key={route.path} element={<route.component />} />
       ) : (
-        <Route key={route.name} path={route.path} element={<route.component />} />
+        <Route key={route.path} path={route.path} element={<route.component />} />
       )
     ) : (
-      <Route key={route.name} path={route.path}>
+      <Route key={route.path} path={route.path}>
         {routerMap(route.children)}
       </Route>
     )

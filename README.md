@@ -1,8 +1,6 @@
 # react h5 template
 
-## react h5 template
-
-门诊导引
+react h5 template
 
 ## 维护人员
 
@@ -27,18 +25,42 @@ npm run lint:fix
 ## 项目目录
 
 ```bash
-    ├── apis
-        ├── config.ts
-        ├── index.ts
-        ├── request.ts
-    ├── assets #资源文件
-    ├── components #项目组件
-    ├── pages #页面
-        ├──<Name> #页面名称 驼峰命名
-            ├── index.tsx
-            ├── index[.module].(scss|sass)
-    ├── router #路由配置
-    ├── utils #工具函数&&自定义hooks
+react h5 template
+   ├── config
+   │     ├── webpack.config.js
+   │     └── ...
+   ├── script
+   │     ├── start.js
+   │     ├── build.js
+   │     └── test.ks
+   ├── .commitlintrc.js
+   ├── .eslintrc.js
+   ├── .prettierrc.js
+   ├── tsconfig.json
+   ├── package.json
+   ├── .gitignore
+   ├── .eslintignore
+   ├── public
+   │   ├── favicon.ico
+   │   └── index.html
+   ├── src
+   │    ├── apis
+   │    │     ├── config.ts
+   │    │     ├── index.ts
+   │    │     ├── request.ts
+   │    ├── assets #资源文件
+   │    ├── components #项目组件
+   │    ├── pages #页面
+   │    │      ├──<Name> #页面名称 驼峰命名
+   │    │          ├── index.tsx
+   │    │          ├── index[.module].(scss|sass)
+   │    ├── router #路由配置
+   │    └── utils #工具函数&&自定义hooks
+   ├── README.md
+   ├── package-lock.json
+   └── yarn.lock
+
+
 ```
 
 ## 项目规范
@@ -56,4 +78,3 @@ commit 规范
 - "revert", // 回滚
 - "config", // 构建过程或辅助工具的变动
 - "chore", // 其他改动
-
