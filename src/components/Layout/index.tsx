@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Badge, TabBar } from "antd-mobile";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import React from "react";
+import { TabBar } from "antd-mobile";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./index.module.scss";
 import {
   AppOutline,
   MessageOutline,
-  MessageFill,
   UnorderedListOutline,
   UserOutline,
 } from "antd-mobile-icons";
