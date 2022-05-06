@@ -5,6 +5,7 @@ import App from "./App";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "lib-flexible";
 import routes, { RouteItem } from "./router";
+import Loading from "./components/Loading";
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 const routerMap: (routes: Array<RouteItem>) => Array<JSX.Element> = routes => {
   return routes.map(route =>
@@ -25,7 +26,7 @@ const routerMap: (routes: Array<RouteItem>) => Array<JSX.Element> = routes => {
 };
 root.render(
   <BrowserRouter>
-    <Suspense fallback={<></>}>
+    <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/" element={<App />}>
           {routerMap(routes)}

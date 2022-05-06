@@ -10,19 +10,26 @@ const routes: Array<RouteItem> = [
   {
     path: "/",
     redirect: "home",
-    component: lazy(() => import("@pages/Home")),
   },
   {
     path: "home",
     component: lazy(() => import("@pages/Home")),
   },
   {
-    path: "test",
-    component: lazy(() => import("@pages/Test")),
+    path: "todo",
+    component: lazy(() => import("@/pages/Categories")),
+  },
+  {
+    path: "message",
+    component: lazy(() => import("@/pages/Messages")),
+  },
+  {
+    path: "my",
+    component: lazy(() => import("@/pages/My")),
   },
   {
     path: "*",
-    component: lazy(() => import("@pages/Test")),
+    component: lazy(() => import("@pages/Error/404")),
   },
 ];
 export default routes;

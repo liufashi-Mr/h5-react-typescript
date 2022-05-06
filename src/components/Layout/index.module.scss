@@ -1,0 +1,11 @@
+.container {
+    padding-bottom: 40px;
+
+    .nav {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        border-top: 1px solid var(--adm-border-color);
+    }
+}
