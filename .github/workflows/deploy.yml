@@ -50,7 +50,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
           ARGS: -rltgoDzvO --delete
-          SOURCE: build
+          SOURCE: build/
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}
-          TARGET: /apps/react-mobile
+          TARGET: /apps/react-mobile/
