@@ -46,18 +46,10 @@ jobs:
       - name: 查看文件
         run: ls -a # 查看打包后的目录文件
       - name: oss上传
-        # uses: appleboy/scp-action@master
-        # with:
-        #   host: ${{ secrets.HOST }} # 服务器host
-        #   username: ${{ secrets.USER }} # 服务器用户名
-        #   password: ${{ secrets.PASSWORD }} # 服务器密码
-        #   source: './build' # 需要上传的文件, 多文件使用逗号隔开
-        #   target: '/apps/react-mobile/' # 上传到服务器的什么位置
-        uses: easingthemes/ssh-deploy@main
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
-          ARGS: -rltgoDzvO --delete
-          SOURCE: ./build
-          REMOTE_HOST: ${{ secrets.HOST }}
-          REMOTE_USER: ${{ secrets.USER }}
-          TARGET: /apps/react-mobile/
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }} # 服务器host
+          username: ${{ secrets.USER }} # 服务器用户名
+          password: ${{ secrets.PASSWORD }} # 服务器密码
+          source: './build' # 需要上传的文件, 多文件使用逗号隔开
+          target: '/apps/react-mobile/' # 上传到服务器的什么位置
