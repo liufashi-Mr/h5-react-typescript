@@ -2,7 +2,12 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import "lib-flexible";
 import routes, { RouteItem } from "./router";
 import Loading from "./components/Loading";
@@ -43,7 +48,7 @@ const routerMap: (routes: Array<RouteItem>) => Array<JSX.Element> = routes => {
   );
 };
 root.render(
-  <BrowserRouter>
+  <Router>
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/" element={<App />}>
@@ -51,5 +56,5 @@ root.render(
         </Route>
       </Routes>
     </Suspense>
-  </BrowserRouter>
+  </Router>
 );
