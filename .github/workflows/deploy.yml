@@ -53,4 +53,4 @@ jobs:
           SOURCE: build/
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}
-          TARGET: /apps/react-mobile/
+          TARGET: /apps/react-mobile/build/
