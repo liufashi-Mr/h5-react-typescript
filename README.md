@@ -2,6 +2,34 @@
 
 react h5 template
 
+## 使用指南
+
+### 通过git clone
+
+```shell
+git clone https://github.com/liufashi-Mr/h5-react-typescript.git
+```
+
+### 通过脚手架
+
+[npm地址](https://www.npmjs.com/package/react-client-create)
+
+```shell
+# global install
+npm i react-client-create -g
+# and then run
+create-cli create [name]
+
+# or
+npm i react-client-create
+#then run
+npx create-cli create [name]
+```
+
+选择第三个
+
+![选择](https://blog.liufashi.top/img/typescript-h5-template/cli.png)
+
 ## 维护人员
 
 - @liufashi<1325178274@qq.com>
